@@ -34,11 +34,11 @@ lib/
 1. Clone the repo
 2. Run `flutter pub get`
 3. Import and use any component in your app.
-4. Wrap with `ProviderScope` for Riverpod integration.
+4. Wrap your app with `ProviderScope` for Riverpod.
 
 ---
 
-## 📸 Demo (Add your screenshots here)
+## 📸 Demo (Screenshots Coming Soon)
 
 ---
 
