@@ -5,6 +5,8 @@ import '../common/form_widgets/text_input.dart';
 import '../common/form_widgets/dropdown.dart';
 import '../common/form_widgets/checkbox.dart';
 import '../common/form_widgets/slider.dart';
+import '../common/form_widgets/form_providers.dart';
+
 
 // Form field controllers and providers
 final nameControllerProvider = Provider<TextEditingController>((ref) {
