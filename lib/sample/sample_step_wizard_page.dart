@@ -5,8 +5,6 @@ import '../common/form_widgets/dropdown.dart';
 import '../common/form_widgets/checkbox.dart';
 import '../common/form_widgets/slider.dart';
 import '../common/form_widgets/step_wizard.dart';
-import '../common/form_widgets/form_providers.dart';
-
 
 // Reuse existing providers
 final stepIndexProvider = StateProvider<int>((ref) => 0);
