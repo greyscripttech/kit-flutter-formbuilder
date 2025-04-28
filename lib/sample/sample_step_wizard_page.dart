@@ -6,6 +6,7 @@ import '../common/form_widgets/checkbox.dart';
 import '../common/form_widgets/slider.dart';
 import '../common/form_widgets/step_wizard.dart';
 
+// Reuse existing providers
 final stepIndexProvider = StateProvider<int>((ref) => 0);
 
 class SampleStepWizardPage extends ConsumerWidget {
