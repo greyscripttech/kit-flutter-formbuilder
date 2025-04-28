@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 
 import 'package:flutter/material.dart';
 import 'sample/sample_form_page.dart';
+=======
+import 'package:flutter/material.dart';
+import 'sample/sample_form_page.dart';
+// import 'sample/sample_step_wizard_page.dart'; // Uncomment to test Step Wizard
+>>>>>>> Stashed changes
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,6 +19,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const SampleFormPage(),
+<<<<<<< Updated upstream
+=======
+      // home: const SampleStepWizardPage(), // To switch to Step Wizard view
+>>>>>>> Stashed changes
     );
   }
 }
