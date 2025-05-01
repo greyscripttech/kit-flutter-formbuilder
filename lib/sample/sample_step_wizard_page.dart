@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../common/form_widgets/text_input.dart';
@@ -92,6 +93,13 @@ class SampleStepWizardPage extends ConsumerWidget {
       appBar: AppBar(title: const Text('Step Wizard Sample')),
       body: Form(
         key: _formKey,
+=======
+body: Form(
+  key: _formKey,
+  child: Column(
+    children: [
+      Expanded(
+>>>>>>> Stashed changes
         child: StepWizard(
           currentStep: currentStep,
           steps: steps,
@@ -127,6 +135,19 @@ class SampleStepWizardPage extends ConsumerWidget {
           },
         ),
       ),
-    );
-  }
-}
+      TextButton(
+        onPressed: () {
+          nameController.clear();
+          ref.read(dropdownValueProvider.notifier).state = null;
+          ref.read(checkboxValueProvider.notifier).state = false;
+          ref.read(sliderValueProvider.notifier).state = 50.0;
+          ref.read(stepIndexProvider.notifier).state = 0;
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Step Wizard reset')),
+          );
+        },
+        child: const Text("Reset Wizard"),
+      ),
+    ],
+  ),
+)
